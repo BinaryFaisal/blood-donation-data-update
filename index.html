@@ -1,0 +1,145 @@
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Update</title>
+</head>
+
+<body>
+    <!-- Red top bar of the website -->
+    <section class="topbar">
+        <div class="container topbar-wrapper">
+            <div class="social">
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+            <div class="contact">
+                <i class="fa-solid fa-square-phone"></i>
+                <p>000 000 000</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Header -->
+    <header class="container" id="home">
+        <!-- Navigation bar -->
+        <nav class="navbar">
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="">
+            </div>
+            <ul id="menuList">
+                <li><a href="">Home</a></li>
+                <li><a href="">Donate Blood</a></li>
+                <li><a href="">Find Donors</a></li>
+                <li><a href="">Top Donors</a></li>
+                <li><a href="">Available Donors</a></li>
+                <li><a href="">Profile</a></li>
+            </ul>
+            <div class="menu-icon">
+                <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Body -->
+    <main class="container">
+        <div class="donate-form">
+            <form id="registrationForm">
+                <fieldset class="input_container">
+                    <legend>Patient Type</legend>
+                    <i class="fa-solid fa-phone-volume"></i>
+                    <input type="text" name="phoneNumber" id="phoneNumber"
+                        placeholder="Enter Phone Number" required />
+                </fieldset>
+                <fieldset class="input_container">
+                    <legend>Blood Donation Date</legend>
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <input type="date" name="lastDate" id="lastDate" placeholder="Phone Number" required />
+                </fieldset>
+                <input type="submit" value="SUBMIT" />
+            </form>
+        </div>
+        <!-- Popup Modal -->
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <!-- <span id="closePopup" class="close">&times;</span> -->
+                <i class="fa-regular fa-circle-check"></i>
+                <p>Success</p>
+                <button><a href="#">Continue</a></button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="container">
+        <div class="footer-wrapper">
+            <div class="footer-first-column">
+                <div class="footer-logo">
+                    <img src="assets/images/logo.png" alt="">
+                </div>
+                <div class="footer-text">
+                    <p>At Aldam, our mission is to save lives by promoting and facilitating blood donation.</p>
+                </div>
+                <div class="footer-social">
+                    <div class="icon">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-second-column">
+                <h3>About</h3>
+                <p>Design by <br> <b>MD. Ibrahim</b> </p>
+                <p>Fontend Developed by <br> <b>Faisal Ahammod</b> </p>
+                <p>Backend Developed by <br> <b>Thofiqul Islam</b> </p>
+                <p>Company belongs to <br> <b>Markin bracknell Ai</b> </p>
+            </div>
+            <div class="footer-third-column">
+                <h3>Partnership</h3>
+                <p>Bobbin</p>
+            </div>
+            <div class="footer-fourth-column">
+                <h3>Contacts</h3>
+                <p>01890429462</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Copyright -->
+    <section class="copyright">
+        <div class="container">
+            <div class="copyright-text">
+                <p>2024 ALDAM. All Right Reserved</p>
+            </div>
+            <div class="goto-top-btn">
+                <a href="#home"><i class="fa-solid fa-arrow-up"></i></a>
+            </div>
+        </div>
+    </section>
+    <!-- Script For Navbar Toggle menue of nabvar -->
+    <script src="script.js"></script>
+</body>
+
+</html>
